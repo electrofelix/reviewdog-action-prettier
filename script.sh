@@ -36,6 +36,9 @@ if [ "$INPUT_REPORTER" = "github-pr-review" ]; then
       -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
       -level="${INPUT_LEVEL}" \
       "${INPUT_REVIEWDOG_FLAGS}"
+
+  echo "show diff"
+  git diff
 # else run prettier in check mode and report warnings and errors
 else
   
