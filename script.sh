@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -ex
 
 # Move to the provided workdir
 cd "${GITHUB_WORKSPACE}/${INPUT_WORKDIR}" || exit 1
